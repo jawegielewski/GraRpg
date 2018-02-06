@@ -685,9 +685,8 @@ public class GameSurface extends SurfaceView implements SurfaceHolder.Callback {
 
 
         @Override
-        public boolean onScroll(MotionEvent e1, MotionEvent e2,
-                                float distanceX, float distanceY) {
-            Log.i("TAG", "onScroll:  hehe");
+        public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+            Log.i("TAG", "onScroll: x1:"+e1.getX()+", y1:"+e1.getY()+", x2:"+e2.getX()+", y2"+e2.getY());
             return true;
         }
 
